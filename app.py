@@ -17,7 +17,7 @@ def get_db_connection():
     )
 @app.route("/")
 def home():
-    return "Inventory Control System is running!"
+    return redirect("/login")
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
